@@ -4,6 +4,7 @@ import { CreditCard } from "@medusajs/icons"
 import Ideal from "@modules/common/icons/ideal"
 import Bancontact from "@modules/common/icons/bancontact"
 import PayPal from "@modules/common/icons/paypal"
+import MercadoPago from "@modules/common/icons/mercadopago"
 
 /* Map of payment provider_id to their title and icon. Add in any payment providers you want to use. */
 export const paymentInfoMap: Record<
@@ -29,6 +30,10 @@ export const paymentInfoMap: Record<
   pp_system_default: {
     title: "Manual Payment",
     icon: <CreditCard />,
+  },
+  pp_mercadopago_mercadopago: {
+    title: "MercadoPago",
+    icon: <MercadoPago />,
   },
   // Add more payment providers here
 }
